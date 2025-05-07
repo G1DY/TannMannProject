@@ -1,8 +1,38 @@
+import {
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaReact,
+  FaTwitter,
+} from 'react-icons/fa';
+
 const Footer = () => {
   return (
     <footer className="bg-gray-800 text-white py-6 mt-auto">
       <div className="container mx-auto px-4 py-y">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-8">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+          {/* Socials section */}
+          <div className="flex flex-col items-start gap-4">
+            <div className="text-lg font-semibold">Follow Us</div>
+            <div className="flex gap-4 text-xl">
+              <a href="#" className="hover:text-gray-300">
+                <FaInstagram />
+              </a>
+              <a href="#" className="hover:text-gray-300">
+                <FaTwitter />
+              </a>
+              <a href="#" className="hover:text-gray-300">
+                <FaLinkedin />
+              </a>
+              <a href="#" className="hover:text-gray-300">
+                <FaFacebook />
+              </a>
+              <a href="#" className="hover:text-gray-300">
+                <FaReact /> {/* Placeholder logo */}
+              </a>
+            </div>
+          </div>
+
           {/* Newsletter Section */}
           <div className="flex-1 flex flex-col">
             <div className="font-bold text-center justify-center mb-2">
