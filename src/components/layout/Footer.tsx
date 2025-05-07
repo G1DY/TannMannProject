@@ -40,9 +40,9 @@ const Footer = () => {
           </div>
 
           {/* Newsletter */}
-          <div className="flex-1 text-center">
+          <div className="flex-1 flex flex-col items-center text-center">
             <h3 className="text-lg font-bold mb-2">JOIN OUR NEWSLETTER</h3>
-            <form className="flex flex-col md:flex-row items-center justify-center gap-4">
+            <form className="flex flex-col md:flex-row items-center gap-4">
               <input
                 type="text"
                 placeholder="Name"
