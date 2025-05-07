@@ -11,7 +11,7 @@ const Navbar = () => {
             <a href="#">MyLogo</a>
           </div>
 
-          {/* Desktop Links */}
+          {/* Access Links */}
           <ul className="hidden md:flex space-x-8 text-lg">
             <li>
               <a href="#" className="hover:text-gray-300">
