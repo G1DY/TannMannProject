@@ -1,89 +1,37 @@
-import { useState } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa';
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
-      <nav className="bg-gray-900 text-white shadow-md">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+      <nav className="bg-[#2b2f3a] text-white py-3 px-6 shadow-md">
+        <div className="max-w-7xl mx-auto flex items-center justify-between">
           {/* Logo */}
-          <div className="text-2xl font-bold">
-            <a href="#">MyLogo</a>
+          <div className="flex items-center gap-2">
+            <img src="#" alt="Logo" className="w-12 h-12" />{' '}
           </div>
 
-          {/* Access Links */}
-          <ul className="hidden md:flex space-x-8 text-lg">
+          {/* Navigation Links */}
+          <ul className="hidden md:flex gap-8 text-sm font-semibold tracking-wide">
             <li>
-              <a href="#" className="hover:text-gray-300">
+              <a href="#" className="hover:text-red-400 transition-colors">
                 Home
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-gray-300">
-                About
+              <a href="#" className="hover:text-red-400 transition-colors">
+                Cart
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-gray-300">
-                Services
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-gray-300">
-                Contact
+              <a href="#" className="hover:text-red-400 transition-colors">
+                Profile
               </a>
             </li>
           </ul>
 
-          {/* Mobile Menu Icon */}
-          <div className="md:hidden">
-            <button onClick={() => setIsOpen(!isOpen)}>
-              {isOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
-            </button>
-          </div>
+          {/* Sign Out Button */}
+          <button className="bg-white text-black text-xs font-bold px-4 py-2 rounded hover:bg-gray-200">
+            SIGN OUT
+          </button>
         </div>
-
-        {/* Mobile Menu */}
-        {isOpen && (
-          <ul className="md:hidden flex flex-col items-center bg-gray-800 py-4 space-y-4">
-            <li>
-              <a
-                href="#"
-                className="hover:text-gray-300"
-                onClick={() => setIsOpen(false)}
-              >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="hover:text-gray-300"
-                onClick={() => setIsOpen(false)}
-              >
-                About
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="hover:text-gray-300"
-                onClick={() => setIsOpen(false)}
-              >
-                Services
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="hover:text-gray-300"
-                onClick={() => setIsOpen(false)}
-              >
-                Contact
-              </a>
-            </li>
-          </ul>
-        )}
       </nav>
     </div>
   );
