@@ -1,3 +1,4 @@
+import { Button } from './ui/button';
 import {
   Dialog,
   DialogContent,
@@ -6,6 +7,7 @@ import {
   DialogHeader,
   DialogTitle,
 } from './ui/dialog';
+import { Textarea } from './ui/textarea';
 
 interface Props {
   open: boolean;
