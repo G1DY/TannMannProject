@@ -65,7 +65,7 @@ const MaleFashion = () => {
         {designFile && (
           <div className="flex justify-end gap-4">
             <Button variant="outline" onClick={handleReUpload}>
-              Cancel Upload
+              ReUpload
             </Button>
             <Button onClick={() => setIsModalOpen(true)}>
               Add Description
