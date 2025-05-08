@@ -9,18 +9,28 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <img src="#" alt="Logo" className="w-12 h-12" />
+            <img
+              src="https://www.google.com/"
+              alt="Logo"
+              className="w-12 h-12"
+            />
           </div>
 
           {/* Links */}
           <ul className="hidden md:flex gap-8 text-sm font-semibold tracking-wide">
             <li>
-              <a href="#" className="hover:text-red-400 transition-colors">
+              <a
+                href="https://www.google.com/"
+                className="hover:text-red-400 transition-colors"
+              >
                 Home
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-red-400 transition-colors">
+              <a
+                href="https://www.google.com/"
+                className="hover:text-red-400 transition-colors"
+              >
                 Cart
               </a>
             </li>

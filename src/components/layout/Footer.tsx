@@ -13,19 +13,31 @@ const Footer = () => {
 
             <div className="flex gap-4 flex-row sm:items-center text-3xl sm:flex-col text-center lg:text-right">
               <a
-                href="#"
+                href="https://www.Instagram.com/"
                 aria-label="Instagram"
                 className="hover:text-gray-300"
               >
                 <FaInstagram />
               </a>
-              <a href="#" aria-label="Twitter" className="hover:text-gray-300">
+              <a
+                href="https://www.twitter.com/"
+                aria-label="Twitter"
+                className="hover:text-gray-300"
+              >
                 <FaTwitter />
               </a>
-              <a href="#" aria-label="LinkedIn" className="hover:text-gray-300">
+              <a
+                href="https://www.LinkedIn.com/"
+                aria-label="LinkedIn"
+                className="hover:text-gray-300"
+              >
                 <FaLinkedin />
               </a>
-              <a href="#" aria-label="Facebook" className="hover:text-gray-300">
+              <a
+                href="https://www.Facebook.com/"
+                aria-label="Facebook"
+                className="hover:text-gray-300"
+              >
                 <FaFacebook />
               </a>
             </div>
@@ -59,16 +71,16 @@ const Footer = () => {
           {/* Navigation */}
           <div className="flex flex-col gap-2 lg:w-1/4 text-sm sm:text-base text-center lg:text-right">
             <h3 className="text-md font-semibold mb-2">Quick Links</h3>
-            <a href="#" className="hover:text-gray-300">
+            <a href="https://www.google.com/" className="hover:text-gray-300">
               About Us
             </a>
-            <a href="#" className="hover:text-gray-300">
+            <a href="https://www.google.com/" className="hover:text-gray-300">
               Terms of Service
             </a>
-            <a href="#" className="hover:text-gray-300">
+            <a href="https://www.google.com/" className="hover:text-gray-300">
               Privacy Policy
             </a>
-            <a href="#" className="hover:text-gray-300">
+            <a href="https://www.google.com/" className="hover:text-gray-300">
               Careers
             </a>
           </div>
