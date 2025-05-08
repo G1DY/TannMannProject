@@ -11,7 +11,7 @@ const MaleFashion = () => {
   };
 
   const handleSubmit = () => {
-    // Handle upload logic here
+    // logging to test
     console.log('Uploaded:', designFile);
     console.log('Description:', description);
     setIsModalOpen(false);
