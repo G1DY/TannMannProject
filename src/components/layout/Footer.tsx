@@ -7,12 +7,11 @@ const Footer = () => {
         <div className="flex flex-col lg:flex-row justify-between gap-12">
           {/*Social + Logo */}
           <div className="flex flex-col items-start gap-4 lg:w-1/3">
-            <img
-              src="/logo.png"
-              alt="Logo"
-              className="w-14 items-center text-center flex justify-center"
-            />
-            <div className="flex gap-4 flex-row sm:items-center lg:w-1/4 text-3xl sm:flex-col text-center lg:text-right">
+            <div className="items-center text-center flex justify-center">
+              <img src="/logo.png" alt="Logo" className="w-14" />
+            </div>
+
+            <div className="flex gap-4 flex-row sm:items-center text-3xl sm:flex-col text-center lg:text-right">
               <a
                 href="#"
                 aria-label="Instagram"
@@ -59,7 +58,7 @@ const Footer = () => {
 
           {/* Navigation */}
           <div className="flex flex-col gap-2 lg:w-1/4 text-sm sm:text-base text-center lg:text-right">
-            <h3 className="text-md font-semibold mb-2"></h3>
+            <h3 className="text-md font-semibold mb-2">Quick Links</h3>
             <a href="#" className="hover:text-gray-300">
               About Us
             </a>
@@ -78,7 +77,7 @@ const Footer = () => {
         <hr className="my-8 border-gray-700" />
 
         <div className="text-center text-sm text-gray-400">
-          © {new Date().getFullYear()} Your Company. All rights reserved.
+          © {new Date().getFullYear()} TannMannGaadi. All rights reserved.
         </div>
       </div>
     </footer>
