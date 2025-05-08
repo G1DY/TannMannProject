@@ -1,15 +1,13 @@
 import Layout from '../components/layout/layout';
-import PreviewDescription from '../pages/PreviewDescription';
-import UploadFile from '../pages/UploadFile';
+import MaleFashion from '../pages/MaleSection';
 
 const App = () => {
   return (
     <div>
       <Layout>
         <div className="flex justify-center items-center h-full">
-          <UploadFile />
+          <MaleFashion />
         </div>
-        <PreviewDescription />
       </Layout>
     </div>
   );
