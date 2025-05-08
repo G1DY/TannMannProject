@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { Button } from '../components/ui/button';
 import Modal from '../components/Modal';
 import { toast } from 'sonner';
@@ -9,6 +9,8 @@ const MaleFashion = () => {
   const [description, setDescription] = useState('');
   const [isModalOpen, setIsModalOpen] = useState(false);
 
+  const fileInputRef = useRef<HTMLInputElement | null>(null);
+
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (file) {
@@ -18,11 +20,11 @@ const MaleFashion = () => {
     }
   };
 
-  const handleCancelUpload = () => {
-    setDesignFile(null);
-    setImagePreview(null);
-    setDescription('');
-    toast.error('Upload canceled.');
+  const handleReUpload = () => {
+    if (fileInputRef.current) {
+      fileInputRef.current.value = '';
+      fileInputRef.current.click();
+    }
   };
 
   const handleSubmit = () => {
@@ -46,6 +48,7 @@ const MaleFashion = () => {
 
       <div className="bg-white p-6 rounded-lg shadow-md max-w-xl mx-auto space-y-4">
         <input
+          ref={fileInputRef}
           type="file"
           onChange={handleFileChange}
           className="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded file:border-0 file:text-sm file:font-semibold file:bg-red-50 file:text-red-700 hover:file:bg-red-100"
@@ -61,7 +64,7 @@ const MaleFashion = () => {
 
         {designFile && (
           <div className="flex justify-end gap-4">
-            <Button variant="outline" onClick={handleCancelUpload}>
+            <Button variant="outline" onClick={handleReUpload}>
               Cancel Upload
             </Button>
             <Button onClick={() => setIsModalOpen(true)}>
